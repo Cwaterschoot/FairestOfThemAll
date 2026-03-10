@@ -36,6 +36,40 @@ system_message = {
                 }
 ```
 
+```
+scenario = {
+        'role': 'user',
+        'content': f"""
+        Assume that there is a group of friends. Every month, a group decision is made by these friends to decide on a restaurant to have dinner together. 
+        To select a restaurant for the dinner next month, the group again has to take the same decision. 
+        In this decision, each group member explicitly rated ten possible restaurants using a 5-star rating scale (1: the worst, 5: the best). 
+        The ratings given by group members are shown in the table below:
+
+        ### BEGIN TABLE ###
+        {result}
+        ### END TABLE ###
+
+        The group decided to avoid going in the same restaurant too often; hence, after a restaurant has been selected, it cannot be chosen again for the next 4 dinners. 
+        **The last 3 restaurants visited are: {already_visited} **.
+        Using the provided ratings, the system made a suggestion for the group on the basis of the preferences of the all the group members.
+        **{recommendation}** has been recommended to the group {explanation}.
+
+        Indicate your agreement to the following statements (7-point likert scale ranging from -3 to 3):
+
+        ** 1.  Fairness **
+        The group recommendation is fair to all group members.
+        
+        ** 2. Consensus **
+        The group members will agree on the group recommendation.
+        
+        ** 3. Satisfaction **
+        The group members will be satisfied with regard to the group recommendation.
+
+        Reply only with the json object which includes your replies (integer 7-point likert scale -3 to 3). 
+        """
+
+    }
+```
 
 ## Fine-tuning Documentation
 
