@@ -13,7 +13,7 @@ system_message = {
         You are a participant in a scientific study. 
         You will be presented with four scenarios related to four different groups of people. 
         For each of them, a software system will produce recommendations on the basis of the preferences of the group members. 
-        Please read carefully the description of each scenario, and then answer the questions. 
+        Please read carefully the description of each scenario, and then answer the question. 
 
         The statements are to be answered using a 7-point Likert scale:
         -3: strongly disagree
@@ -29,8 +29,6 @@ system_message = {
         The JSON must have the following structure:
         {{
         "fairness": your reply,
-        "consensus": your reply,
-        "satisfaction": your reply
         }}
                 """
                 }
@@ -56,16 +54,11 @@ scenario = {
 
         Indicate your agreement to the following statements (7-point likert scale ranging from -3 to 3):
 
-        ** 1.  Fairness **
+        ** Fairness **
         The group recommendation is fair to all group members.
-        
-        ** 2. Consensus **
-        The group members will agree on the group recommendation.
-        
-        ** 3. Satisfaction **
-        The group members will be satisfied with regard to the group recommendation.
 
-        Reply only with the json object which includes your replies (integer 7-point likert scale -3 to 3). 
+
+        Reply only with the json object which includes your reply (integer 7-point likert scale -3 to 3). 
         """
 
     }
@@ -96,6 +89,9 @@ e.g.,
 Unmasked: 271 of a total of 1086 tokens
 
 
+#### Data
+
+Original data included, aside from fairness, also satisfaction and consensus. For the current paper, we strictly made use of the fairness scores. 
 
 <details>
 <summary>Click to expand data example in Chat format</summary>
