@@ -6,7 +6,7 @@ Dataset by Barile et al., 2023: https://osf.io/5xbgf/overview
 
 ## LLM-as-judge prompts
 
-```json
+```
 system_message = {
         'role': 'system',
         'content': """
