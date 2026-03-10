@@ -4,6 +4,38 @@ Repository for Who is the Fairest of Them All?
 
 Dataset by Barile et al., 2023: https://osf.io/5xbgf/overview
 
+## LLM-as-judge prompts
+
+```json
+system_message = {
+        'role': 'system',
+        'content': """
+        You are a participant in a scientific study. 
+        You will be presented with four scenarios related to four different groups of people. 
+        For each of them, a software system will produce recommendations on the basis of the preferences of the group members. 
+        Please read carefully the description of each scenario, and then answer the questions. 
+
+        The statements are to be answered using a 7-point Likert scale:
+        -3: strongly disagree
+        -2: disagree
+        -1: somehwat disagree
+        0: neither agree, neither disagree
+        1: somewhat agree
+        2: agree
+        3: strongly agree
+
+        You are to return ONLY a valid JSON object, with no explanations or extra text. 
+        Do not include markdown formatting (no ```json). 
+        The JSON must have the following structure:
+        {{
+        "fairness": your reply,
+        "consensus": your reply,
+        "satisfaction": your reply
+        }}
+                """
+                }
+```
+
 
 ## Fine-tuning Documentation
 
