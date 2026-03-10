@@ -13,7 +13,7 @@ Llama was fine-tuned using Supervised fine-tuning (SFT) with the transformers py
 
 ![Llama-loss](Llama-training-loss.png)
 
-Parameters:
+#### Parameters:
 lr =  1e-4
 lora_alpha:32
 lora_dropout:0.1
@@ -23,6 +23,16 @@ per_device_eval_batch_size:2
 per_device_train_batch_size:4
 grad_accum: 4
 max_seq_length: 1275 (calculated based on max length of samples)
+
+Custom masking function to only calculate loss on assistant message, which was validated before running.
+e.g.,
+
+================================================================================
+MASKING SANITY CHECK
+================================================================================
+Unmasked: 271 of a total of 1086 tokens
+
+
 
 <details>
 <summary>Click to expand data example in Chat format</summary>
