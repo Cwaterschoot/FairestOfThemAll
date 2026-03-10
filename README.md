@@ -21,6 +21,5 @@ Llama was fine-tuned using Supervised fine-tuning (SFT) with the transformers py
 {
   "your": "data"
 }
-
-
+```
 </details>
