@@ -1,4 +1,4 @@
-# FairestOfThemAll
+# Who is the Fairest of Them All? - LBR UMAP 2026
 Repository for Who is the Fairest of Them All?
 
 
