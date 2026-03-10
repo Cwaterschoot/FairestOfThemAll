@@ -24,12 +24,9 @@ per_device_train_batch_size:4
 grad_accum: 4
 max_seq_length: 1275 (calculated based on max length of samples)
 
-Custom masking function to only calculate loss on assistant message, which was validated before running.
+Custom masking function (create_weighted_labels(input_ids, tokenizer, model_name)) to only calculate loss on assistant message, which was validated before running. Function created to also parse Olmo and Qwen tokenizers
 e.g.,
 
-================================================================================
-MASKING SANITY CHECK
-================================================================================
 Unmasked: 271 of a total of 1086 tokens
 
 
