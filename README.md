@@ -12,3 +12,15 @@ Dataset by Barile et al., 2023: https://osf.io/5xbgf/overview
 Llama was fine-tuned using Supervised fine-tuning (SFT) with the transformers python package for four epochs. Data was split 80/20 training/test. The test set was used for evaluation during fine-tuning. Below is the training and evaluation loss.
 
 ![Llama-loss](Llama-training-loss.png)
+
+
+<details>
+<summary>Click to expand JSON example</summary>
+
+```json
+{
+  "your": "data"
+}
+
+
+</detail>
