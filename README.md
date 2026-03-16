@@ -4,6 +4,12 @@ Repository for Who is the Fairest of Them All?
 
 Dataset by Barile et al., 2023: https://osf.io/5xbgf/overview
 
+config_gen.py: scenario generation provided by Barile et al., 2023
+strats.py: functions that calculate recommendation based on social choice-basec aggregation strategy
+finetune.py: fine-tuning script
+Finetuned-generation.py: script to generate assessments with fine-tuned model
+
+
 ## LLM-as-judge prompts
 
 ```
