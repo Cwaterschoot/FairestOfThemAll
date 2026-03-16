@@ -299,7 +299,6 @@ if tester == True:
             max_new_tokens=1500,
             eos_token_id=terminators,
             temperature=0.5,
-            top_p=0.9,
             do_sample=True,
             repetition_penalty=1.15,
         )
