@@ -34,8 +34,7 @@ LOCAL_TEST_PATH = "/content/test_v5_2.jsonl"
 @dataclass
 class FineTuneConfig:
 
-    #model_name: str = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-    model_name: str = "allenai/Olmo-3-7B-Think-SFT"
+    model_name: str = "meta-llama/Meta-Llama-3.1-8B-Instruct"
 
 
 
